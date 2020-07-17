@@ -470,8 +470,13 @@ endif(UNIX)
 
 add_library(${qhull_CPP} STATIC ${libqhullcpp_SOURCES})
 set_target_properties(${qhull_CPP} PROPERTIES
-    VERSION ${qhull_VERSION}
-    POSITION_INDEPENDENT_CODE "TRUE")
+  VERSION ${qhull_VERSION}
+  POSITION_INDEPENDENT_CODE "TRUE")
+
+target_include_directories(${qhull_CPP} PUBLIC
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/src>"
+  "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>")
+
 
 # ---------------------------------------
 # Define qhull executables linked to qhullstatic library
