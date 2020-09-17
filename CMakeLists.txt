@@ -652,30 +652,31 @@ set_target_properties(user_egp PROPERTIES
 
 option(QHULL_ENABLE_TESTING "enable testing for qhull" OFF)
 if (QHULL_ENABLE_TESTING)
-enable_testing()
-add_test(NAME testqset
-   COMMAND ./testqset 10000)
-add_test(NAME testqset_r
-   COMMAND ./testqset_r 10000)
-add_test(NAME smoketest
-   COMMAND sh -c "./rbox D4 | ./qhull Tv")
-add_test(NAME rbox-10-qhull
-   COMMAND sh -c "./rbox 10 | ./qhull Tv")
-add_test(NAME rbox-10-qconvex
-   COMMAND sh -c "./rbox 10 | ./qconvex Tv")
-add_test(NAME rbox-10-qdelaunay
-   COMMAND sh -c "./rbox 10 | ./qdelaunay Tv")
-add_test(NAME rbox-10-qhalf
-   COMMAND sh -c "./rbox 10 | ./qconvex FQ FV n Tv | ./qhalf Tv")
-add_test(NAME rbox-10-qvoronoi
-   COMMAND sh -c "./rbox 10 | ./qvoronoi Tv")
-add_test(NAME user_eg
-   COMMAND sh -c "./user_eg")
-add_test(NAME user_eg2
-   COMMAND sh -c "./user_eg2")
-if(${BUILD_STATIC_LIBS})
+  enable_testing()
+  add_test(NAME testqset
+    COMMAND ./testqset 10000)
+  add_test(NAME testqset_r
+    COMMAND ./testqset_r 10000)
+  add_test(NAME smoketest
+    COMMAND sh -c "./rbox D4 | ./qhull Tv")
+  add_test(NAME rbox-10-qhull
+    COMMAND sh -c "./rbox 10 | ./qhull Tv")
+  add_test(NAME rbox-10-qconvex
+    COMMAND sh -c "./rbox 10 | ./qconvex Tv")
+  add_test(NAME rbox-10-qdelaunay
+    COMMAND sh -c "./rbox 10 | ./qdelaunay Tv")
+  add_test(NAME rbox-10-qhalf
+    COMMAND sh -c "./rbox 10 | ./qconvex FQ FV n Tv | ./qhalf Tv")
+  add_test(NAME rbox-10-qvoronoi
+    COMMAND sh -c "./rbox 10 | ./qvoronoi Tv")
+  add_test(NAME user_eg
+    COMMAND sh -c "./user_eg")
+  add_test(NAME user_eg2
+    COMMAND sh -c "./user_eg2")
+  if(${BUILD_STATIC_LIBS})
     add_test(NAME user_eg3
-       COMMAND sh -c "./user_eg3 rbox '10 D2' '2 D2' qhull 's p' facets")
+      COMMAND sh -c "./user_eg3 rbox '10 D2' '2 D2' qhull 's p' facets")
+  endif()
 endif()
 
 # ---------------------------------------
