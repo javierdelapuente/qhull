@@ -8,18 +8,19 @@
 <body>
 <!-- Navigation links -->
 <b>URL:</b> <a href="http://www.qhull.org">http://www.qhull.org</a>
-<br><b>To:</b>
-<a href="http://www.qhull.org/news">News</a>
+&#149; <a href="http://www.qhull.org/news">News</a>
 &#149; <a href="http://scholar.google.com/scholar?cites=13151392091060773178&as_sdt=40000005">Scholar</a>
 &#149; <a href=http://images.google.com/images?q=qhull&num=100>Images</a>
 &#149; <a href="https://github.com/qhull/qhull/wiki">GitHub</a>
-&#149; <a href="http://www.qhull.org/download">Download</a>
+<br><b>To:</b>
+<a href="http://www.qhull.org/download">Download</a>
+&#149; <a href="README.txt">Readme</a>
 &#149; <a href="html/index.htm">Manual</a>
 &#149; <a href="html/qh-quick.htm#programs">Programs</a>
 &#149; <a href="html/qh-quick.htm#options">Options</a>
-&#149; <a href="html/qh-code.htm">Code</a>
-&#149; <a href="src/libqhull_r/index.htm">Functions</a>
 &#149; <a href="html/qh-faq.htm">FAQ</a>
+&#149; <a href="html/qh-code.htm">Code</a>
+&#149; <a href="http://www.qhull.org/src/libqhull_r/index.htm">Functions</a>
 </p>
 
 <hr>
@@ -46,7 +47,7 @@ generation of non-convex objects, medium-sized inputs in 9-D
 and higher, alpha shapes, weighted Voronoi diagrams, Voronoi volumes, or
 constrained Delaunay triangulations,  </p>
 
-<p>If you call Qhull from your program, please use reentrant Qhull (libqhull_r) or static Qhull (libqhull).
+<p>If you call Qhull from your program, please use reentrant Qhull (libqhull_r or libqhullstatic_r).
 If you use Qhull 2003.1, please upgrade or apply <a href="http://www.qhull.org/download/poly.c-qh_gethash.patch">poly.c-qh_gethash.patch</a>.
 </p>
 </td></tr></table>
@@ -58,7 +59,7 @@ If you use Qhull 2003.1, please upgrade or apply <a href="http://www.qhull.org/d
 <ul>
     <li><a href="http://www.qhull.org/news">News</a> and
         <a href="http://www.qhull.org/news/qhull-news.html#bugs">Bugs</a>
-        about Qhull 2020.1  2020/05/29 (8.0.0)</li>
+        about Qhull 2020.2  2020/08/31 (8.0.2)</li>
 	<li><a href="http://www.qhull.org/download">Download</a> Qhull (<a href="http://www.qhull.org/src/Changes.txt">changes</a>)</li>
 	<li><a href="https://github.com/qhull/qhull/wiki">GitHub</a> C++ interface to Qhull
 	<li><a href="html/index.htm">Introduction and manual</a> for Qhull and rbox with a <a href="html/qh-faq.htm">FAQ</a>
@@ -124,29 +125,30 @@ If you use Qhull 2003.1, please upgrade or apply <a href="http://www.qhull.org/d
    <li><a href="html/index.htm">Manual</a> for Qhull and rbox
    <table><tr><td>
         <ul>
-          <li><a href="html/index.htm#when">When</a> to use Qhull
+          <li>Quick reference to <a href="html/qh-quick.htm#programs">Programs</a> and <a href="html/qh-quick.htm#options">Options</a>
+                <li><a href="html/index.htm#when">When</a> to use Qhull
                 <li><a href="html/index.htm#description">Description</a> of Qhull
                 <li><a href="html/qh-impre.htm">Imprecision</a> in Qhull
-                <li>Quick reference to <a href="html/qh-quick.htm#programs">Programs</a> and <a href="html/qh-quick.htm#options">Options</a>
                 <li><a href="html/qconvex.htm">qconvex</a> -- convex hull
                 <li><a href="html/qdelaun.htm">qdelaunay</a> -- Delaunay triangulation
                 <li><a href="html/qvoronoi.htm">qvoronoi</a> -- Voronoi diagram
                 <li><a href="html/qhalf.htm">qhalf</a> -- halfspace intersection about a point
                 <li><a href="html/rbox.htm">rbox</a> -- generate point distributions
         </ul></td><td><ul>
-            <li><a href="html/qh-faq.htm">FAQ</a> - frequently asked
-                questions about Qhull</li>
-            <li><a href="html/index.htm#geomview">Geomview</a> for visualizing Qhull
-            <li><a href="COPYING.txt">COPYING.txt</a> - copyright notice<br>
-            <li><a href="REGISTER.txt">REGISTER.txt</a> - registration<br>
             <li><a href="README.txt">README.txt</a> - installation
             instructions<br>
+            <li><a href="COPYING.txt">COPYING.txt</a> - copyright notice<br>
+            <li><a href="REGISTER.txt">REGISTER.txt</a> - registration<br>
+            <li><a href="html/index.htm#geomview">Geomview</a> for visualizing Qhull
+            <li><a href="html/qh-faq.htm">FAQ</a> - frequently asked
+                questions about Qhull</li>
             <li><a href="src/Changes.txt">Changes.txt</a> - change history <br>
             <li><a href="html/qh-code.htm">Qhull code</a>
             <li><a href="html/qh-code.htm#performance">Performance</a> of Qhull
             <li><a href="http://www.qhull.org/src/libqhull_r/index.htm">Index</a> to Qhull Functions
             </ul>
         </td></tr></table>
+    <li><a href="https://github.com/qhull/qhull/wiki/Qhull-build-systems">Qhull build systems</a>
     <li>Send e-mail to <a href=mailto:qhull@qhull.org>qhull@qhull.org</a> </li>
     <li>Report bugs to <a
         href="mailto:qhull_bug@qhull.org">qhull_bug@qhull.org</a>
@@ -174,11 +176,10 @@ geometry programs and other combinatorial algorithms
         href="http://www.cs.mcgill.ca/~fukuda/soft/cdd_home/cdd.html">
         cdd</a> program for halfspace intersection and convex hulls (<a
         href="http://www.csb.ethz.ch/tools/polco">Polco/Java</a>)</li>
-        <li>Gartner's <a href="http://www.inf.ethz.ch/personal/gaertner/miniball.html">
+    <li>Gartner's <a href="http://www.inf.ethz.ch/personal/gaertner/miniball.html">
         Miniball</a> for fast and robust smallest enclosing balls (up to 20-d)
-
-        <li><a href=http://www.mathtools.net/>Mathtools.net</a> of scientific and engineering
-        software
+	<li>Gold's <a href="http://web.archive.org/web/20081018211137/http://www.voronoi.com/wiki/index.php?title=Voronoi_Applications">Voronoi applications</a> for spatial analysis (as of 2008)
+    <li><a href=http://www.mathtools.net/>Mathtools.net</a> of scientific and engineering software
     <li>Owen's <a href="http://www.imr.sandia.gov/papers/topics.html">International Meshing</a> Roundtable
     <li>Schneiders' <a
         href="http://www.robertschneiders.de/meshgeneration/meshgeneration.html">
@@ -186,7 +187,6 @@ geometry programs and other combinatorial algorithms
      <li>Shewchuk's <a href="http://www.cs.cmu.edu/~quake/triangle.html">triangle</a> program for 2-d Delaunay</li>
      <li>Teillaud's <a href="http://www.computational-geometry.org/">Computional Geometry Pages</a> for the Society of Computational Geometry and academic conferences.
         <li>Tomilov's <a href="https://github.com/tomilov/quickhull/blob/master/include/quickhull.hpp">quickhull.hpp</a> (<a href="http://habrahabr.ru/post/245221/">doc-ru</a>) implements the Quickhull algorithm for points in general position.
-        <li><a href=http://www.voronoi.com>Voronoi Web Site</a> for all things Voronoi
         <li>Young's <a href="http://homepage.usask.ca/~ijm451/finite/fe_resources/">Internet Finite Element Resources</a>
         <li>Zolotykh's <a href="http://www.uic.unn.ru/~zny/skeleton/">Skeleton</a> generates all extreme rays of a polyhedral cone using the Double Description Method</li>
 </ul>
@@ -259,16 +259,19 @@ is <a href=http://www.vtk.org/>VTK</a>.</p>
 <p><b>Up:</b> <a href="http://www.geom.uiuc.edu/software/past-projects.html"><i>Past Software
 Projects of the Geometry Center</i></a> <br>
 <b>URL:</b> <a href="http://www.qhull.org">http://www.qhull.org</a>
-<br><b>To:</b>
-<a href="http://www.qhull.org/news">News</a>
-&#149; <a href="http://www.qhull.org/download">Download</a>
+&#149; <a href="http://www.qhull.org/news">News</a>
 &#149; <a href="http://scholar.google.com/scholar?cites=13151392091060773178&as_sdt=40000005">Scholar</a>
 &#149; <a href=http://images.google.com/images?q=qhull&num=100>Images</a>
+&#149; <a href="https://github.com/qhull/qhull/wiki">GitHub</a>
+<br><b>To:</b>
+<a href="http://www.qhull.org/download">Download</a>
+&#149; <a href="README.txt">Readme</a>
 &#149; <a href="html/index.htm#TOC">Manual</a>
-&#149; <a href="http://www.qhull.org/html/qh-faq.htm">FAQ</a>
 &#149; <a href="html/qh-quick.htm#programs">Programs</a>
 &#149; <a href="html/qh-quick.htm#options">Options</a>
-&#149; <a href="src/libqhull_r/index.htm">Functions</a>
+&#149; <a href="http://www.qhull.org/html/qh-faq.htm">FAQ</a>
+&#149; <a href="html/qh-code.htm">Code</a>
+&#149; <a href="http://www.qhull.org/src/libqhull_r/index.htm">Functions</a>
 <!-- GC common information --></p>
 
 <hr>
